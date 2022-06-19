@@ -1,15 +1,32 @@
-var a = 5;
+var a = "5";
 var b = 5;
-console.log (a+b);
-console.log(typeof(a+b));
+console.log(a * b);
 
-var a = 5;
-var b = "5";
-console.log (a+b);
-console.log(typeof(a+b));
+var a = "apple";
+var b = 5;
+console.log(a * b);
 
-console.log(Math.round(7.5));
-console.log(Math.floor(7.5));
-console.log(Math.ceil(7.5));
-console.log(Math.max(7,4,9,8));
-console.log(Math.PI);
+var a = "apple";
+var b = 5;
+
+if (isNaN(a)) {
+    console.log("that int even a number, thickie");
+} else {
+
+    console.log("meaning of life is " + (a * b));
+}
+
+var a = 6;
+var b = 5;
+
+if (isNaN(a)) {
+    console.log("that int even a number, thickie");
+} else {
+
+    console.log("meaning of life is " + (a * b));
+}
+
+// "double negative"
+if (!isNaN(a)) {
+    console.log("meaning of life is " + (a * b));
+}

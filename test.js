@@ -1,32 +1,42 @@
-var a = "5";
-var b = 5;
-console.log(a * b);
+var myString = "I am a string";
+var myString = 'I am a "fun" string';
+var myString = 'I\'m a "fun" string';
 
-var a = "apple";
-var b = 5;
-console.log(a * b);
+console.log(myString.length);
+console.log(myString.toUpperCase);
+console.log(myString.toLowerCase);
+console.log(myString.indexOf("string"));
+console.log(myString.indexOf("ninja"));
 
-var a = "apple";
-var b = 5;
-
-if (isNaN(a)) {
-    console.log("that int even a number, thickie");
+if (myString.indexOf("ninja") === -1) {
+    console.log("the word ninja is not on the string");
 } else {
-
-    console.log("meaning of life is " + (a * b));
+    console.log("the word ninja starts at position " +
+        myString.indexOf("ninja"));
 }
 
-var a = 6;
-var b = 5;
+9 === 8
+9 == 8
 
-if (isNaN(a)) {
-    console.log("that int even a number, thickie");
-} else {
+var string1 = "abc";
+var string2 = "bcd";
+console.log(string1 === string2);
 
-    console.log("meaning of life is " + (a * b));
-}
+var string1 = "abc";
+var string2 = "BCD";
+console.log(string1.toLowerCase === string2.toLowerCase);
 
-// "double negative"
-if (!isNaN(a)) {
-    console.log("meaning of life is " + (a * b));
-}
+// true, why ???
+var string1 = "abc";
+var string2 = "bcd";
+console.log(string1.toLowerCase === string2.toLowerCase);
+
+// Because of order in alphabet // true
+var string1 = "abc";
+var string2 = "bcd";
+console.log(string1 < string2);
+
+// false
+var string1 = "abc";
+var string2 = "Bcd";
+console.log(string1 < string2);
